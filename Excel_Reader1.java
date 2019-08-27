@@ -1,5 +1,5 @@
 package excel_reader;
-
+//need to import poi jar files first
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -26,6 +26,7 @@ public class Excel_Reader1 {
 		Iterator cellitr=row.iterator();
 		while (cellitr.hasNext()) {
 			Cell cell=(Cell) cellitr.next();
+			//can be used using  given if condition
 			/*if (cell.getCellType()==CellType.STRING) {
 				data.add(cell.getStringCellValue());
 				
