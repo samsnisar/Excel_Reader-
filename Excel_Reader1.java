@@ -15,6 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class Excel_Reader1 {
 	public static void main(String[] args) throws Exception {
 		ArrayList data=new ArrayList();
+		//pointing to the excel file using the file path
 		FileInputStream file= new FileInputStream("E://shams//shams.xlsx");
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		XSSFSheet sheet=workbook.getSheetAt(0);
